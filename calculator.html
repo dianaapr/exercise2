@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Calculator Diana</title>
+</head>
+<body>
+    <div class="mycalculator">
+        <div class="mycalculator-title rounded-top">
+            <h5><i class="fas fa-calculator"></i> calcumate</h5>
+        </div>
+ 
+        <div >
+            <form name="formAngka">
+                <input class="screen" type="text" name="isiText" autocomplete="off">
+            </form>
+        </div>
+ 
+        <div class="container-number rounded-bottom">
+            <table class="key">
+                <tr class="row-key">
+                    <td></td>
+                    <!-- <td><input class="btn-operation operator" type="button" value="^" onclick="ins('^')"></td> -->
+                    <td><input class="btn-operation clear" type="button" value="AC" onclick="hapusAll()"></td>
+                    
+                    <td><input class="btn-operation operator fas fa-times" type="button" value="&#xf00d" onclick="ins('*')"></td>
+                    <td><input class="btn-operation operator fas fa-divide" type="button" value="&#xf529" onclick="ins('/')"></td>
+                </tr>
+                <tr class="row-key">
+                    <td><input class="btn-operation num" type="button" value="7" onclick="ins(7)"></td>
+                    <td><input class="btn-operation num" type="button" value="8" onclick="ins(8)"></td>
+                    <td><input class="btn-operation num" type="button" value="9" onclick="ins(9)"></td>
+                    <td><input class="btn-operation operator fas fa-minus" type="button" value="&#xf068" onclick="ins('-')"></td>
+                </tr>
+                <tr class="row-key">
+                    <td><input class="btn-operation num" type="button" value="4" onclick="ins(4)"></td>
+                    <td><input class="btn-operation num" type="button" value="5" onclick="ins(5)"></td>
+                    <td><input class="btn-operation num" type="button" value="6" onclick="ins(6)"></td>
+                    <td><input class="btn-operation operator fas fa-plus" type="button" value="&#xf067" onclick="ins('+')"></td>
+                </tr>
+                <tr class="row-key">
+                    <td><input class="btn-operation num" type="button" value="3" onclick="ins(3)"></td>
+                    <td><input class="btn-operation num" type="button" value="2" onclick="ins(2)"></td>
+                    <td><input class="btn-operation num" type="button" value="1" onclick="ins(1)"></td>
+                    <td><input class="btn-operation operator fas fa-backspace" type="button" value="&#xf55a" onclick="bcksp()"></td>
+                </tr>
+                <tr class="row-key">
+                    <td><input class="kosong"  value="-"></td>
+                    <td><input class="btn-operation num" type="button" value="0" onclick="ins(0)"></td>
+                    <td><input class="btn-operation num" type="button" value="." onclick="ins('.')"></td>
+                    <td><input class="btn-operation operator-hasil fas fa-equals" type="button" value="&#xf52c" onclick="samaDengan()"></td>
+                </tr>
+            </table>
+        </div>         
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
